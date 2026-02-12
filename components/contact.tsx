@@ -4,7 +4,7 @@ import React, { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Send, Loader2 } from "lucide-react" // Importamos un icono de carga
+import { Send, Loader2 } from "lucide-react"
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -14,7 +14,6 @@ export function Contact() {
     mensaje: "",
   })
   
-  // Estado para manejar la carga del envío
   const [isSending, setIsSending] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -29,8 +28,7 @@ export function Contact() {
     setIsSending(true)
     
     try {
-      // Petición a tu backend de Spring Boot
-      const response = await fetch("http://localhost:8080/api/contact", {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -39,16 +37,15 @@ export function Contact() {
       })
 
       if (response.ok) {
-        alert("¡Mensaje enviado con éxito!")
-        // Limpiamos el formulario
+        alert("¡Mensaje enviado con éxito! Revisaré tu correo pronto.")
         setFormData({ nombre: "", apellido: "", asunto: "", mensaje: "" })
       } else {
         const errorData = await response.text()
-        alert(`Error al enviar: ${errorData || "El servidor no respondió correctamente."}`)
+        alert(`Error al enviar: ${errorData || "El servidor no pudo procesar el mensaje."}`)
       }
     } catch (error) {
       console.error("Error de conexión:", error)
-      alert("No se pudo conectar con el servidor. ¿Te aseguraste de que el backend en IntelliJ esté corriendo?")
+      alert("No se pudo establecer conexión con el servidor. Por favor, inténtalo de nuevo más tarde.")
     } finally {
       setIsSending(false)
     }
@@ -58,13 +55,13 @@ export function Contact() {
     <section id="contact" className="py-24 px-6 md:px-12 lg:px-24">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-10">
-          <p className="text-primary font-mono text-sm mb-4">03. Y ahora que?</p>
+          <p className="text-primary font-mono text-sm mb-4">03. ¿Y ahora qué?</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Contactame
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Estoy buscando nuevas oportunidades laborales. Pongamonos en contacto ya sea para una pregunta, una propuesta de 
-            proyecto o simplemente para saludar, charlemos!
+            Estoy buscando nuevas oportunidades laborales. Pongámonos en contacto ya sea para una pregunta, una propuesta de 
+            proyecto o simplemente para saludar. ¡Charlemos!
           </p>
         </div>
         
@@ -128,7 +125,7 @@ export function Contact() {
             <Textarea
               id="mensaje"
               name="mensaje"
-              placeholder="Escribe tu mensaje aqui..."
+              placeholder="Escribe tu mensaje aquí..."
               value={formData.mensaje}
               onChange={handleChange}
               required
