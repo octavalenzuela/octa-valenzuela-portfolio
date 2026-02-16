@@ -36,7 +36,7 @@ export function Projects() {
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">
-            <span className={`font-mono text-xl mr-2 ${accentText}`}>04.</span>
+            <span className={`font-mono text-xl mr-2 ${accentText}`}>03.</span>
             Proyectos
           </h2>
           <div className="h-[1px] bg-border flex-grow max-w-[300px]" />

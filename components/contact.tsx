@@ -55,7 +55,7 @@ export function Contact() {
     <section id="contact" className="py-24 px-6 md:px-12 lg:px-24">
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-10">
-          <p className="text-primary font-mono text-sm mb-4">03. ¿Y ahora qué?</p>
+          <p className="text-primary font-mono text-sm mb-4">04. ¿Y ahora qué?</p>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Contactame
           </h2>
