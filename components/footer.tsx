@@ -25,7 +25,7 @@ export function Footer() {
           </a>
         </div>
         <p className="text-muted-foreground text-sm font-mono">
-          Disenado y construido por Octavio Valenzuela.
+          PORTFOLIO © OCTAVIO VALENZUELA  {new Date().getFullYear()}
         </p>
       </div>
     </footer>

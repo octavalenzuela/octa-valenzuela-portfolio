@@ -55,7 +55,7 @@ export function Navbar() {
             <li key={link.name}>
               <button
                 onClick={() => scrollToSection(link.href)}
-                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                className="text-sm text-muted-foreground hover:text-primary transition-colors hover:cursor-pointer"
               >
                 <span className="text-primary font-mono text-xs mr-1">{link.number}.</span>
                 {link.name}

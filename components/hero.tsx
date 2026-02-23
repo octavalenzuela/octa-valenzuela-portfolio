@@ -18,11 +18,11 @@ export function Hero() {
           Octavio Valenzuela.
         </h1>
         <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-muted-foreground mb-6 text-balance">
-          Desarrollador fullstack.
+          Desarrollador Full Stack.
         </h2>
         <p className="text-muted-foreground text-base md:text-lg max-w-xl mb-8 leading-relaxed">
         Soy un desarrollador con experiencia en la creación de aplicaciones 
-              web y APIs. Trabajo tanto en el backend como en el frontend, desarrollando soluciones 
+              web y APIs. Trabajo tanto en el Backend como en el Frontend, desarrollando soluciones 
               de punta a punta.
         </p>
         <div className="flex items-center gap-4 mb-12">

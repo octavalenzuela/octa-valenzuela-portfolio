@@ -12,19 +12,19 @@ export function About() {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4">
             <p className="text-muted-foreground leading-relaxed">
-              Hola, soy<span className="text-primary"> Octa Valenzuela</span>, tengo 26 años, soy de Argentina y  <span className="text-primary"> desarrollo aplicaciones web integrales combinando lógica de backend, gestión de bases de datos y diseño de interfaces</span>. 
+              Hola, soy<span className="text-primary"> Octa Valenzuela</span>, tengo 26 años, soy de Argentina y  <span className="text-primary"> desarrollo aplicaciones web integrales combinando lógica de Backend, gestión de bases de datos y diseño de interfaces</span>. 
               Mi enfoque se centra en la calidad del código y la documentación, asegurando que cada solución sea tan potente 
               por dentro como funcional por fuera.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Adquirí experiencia como Integrador de Aplicaciones y Analista técnico funcional en el  
               <span className="text-primary"> Hospital Universitario Austral</span>, y como desarrollador en <span className="text-primary"> Juana Bonita</span>, 
-              donde apliqué soluciones en su backend, en el frontend y también en las bases de datos.
+              donde apliqué soluciones en su Backend, en el Frontend y también en las bases de datos.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Me formé en la  <span className="text-primary"> secundaria técnica E.E.S.T.N°3 </span> egresandome como  <span className="text-primary"> Técnico en Informatica </span> 
                y actualmente estoy cursando la <span className="text-primary"> Tecnicatura Universitaria en Desarrollo de Software</span> en la <span className="text-primary"> Universidad Nacional de Pilar</span>. 
-               Sigo creando y ampliando mis conocimientos como <span className="text-primary">fullstack</span> realizando proyectos personales y colaborativos.
+               Sigo creando y ampliando mis conocimientos como <span className="text-primary">Full Stack</span> realizando proyectos personales y colaborativos.
               Me interesa seguir aprendiendo y aportar valor en equipos de desarrollo.
             </p>
           </div>

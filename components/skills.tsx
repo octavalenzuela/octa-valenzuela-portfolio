@@ -37,7 +37,7 @@ interface SkillCategory {
 
 const skillsData: SkillCategory[] = [
   {
-    title: "Front End",
+    title: "Frontend",
     icon: <Code2 className="h-6 w-6" />,
     skills: [
       { name: "JavaScript", icon: <JavaScriptIcon className="h-5 w-5" /> },
@@ -50,7 +50,7 @@ const skillsData: SkillCategory[] = [
     ],
   },
   {
-    title: "Back End",
+    title: "Backend",
     icon: <Server className="h-6 w-6" />,
     skills: [
       { name: "Node.js", icon: <NodeIcon className="h-5 w-5" /> },
